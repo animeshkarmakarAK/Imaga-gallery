@@ -56,6 +56,15 @@ class imageController extends Controller
     	$content =  Storage::get($images->image);
     	return $content;
     }
+
+
+
+        public function blog()
+    {
+    	$images = \App\image::all();
+    	return view('chitrokor.blog',compact('images'));
+    }
+
 }
 
 

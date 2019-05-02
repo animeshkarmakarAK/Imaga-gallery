@@ -44,18 +44,12 @@ Route::get('admin',function(){
 });
 
 Route::get('/gallery','imageController@gallery');
+Route::get('/blog','imageController@blog');
 Route::get('/retrive','imageController@retrive');
 
 // Route::get('contact',function(){
 //     return view('chitrokor.contact');
 // });
 
-Route::get('blog',function(){
-    return view('chitrokor.blog');
-});
-
 Route::get('/contact','ContactController@create');
 Route::post('/contact','ContactController@store');
-Route::get('/blog',function(){
-    return view('chitrokor.blog');
-});
